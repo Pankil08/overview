@@ -204,56 +204,72 @@ fieldset{
 
 /* CSS for Mobile Size or Smaller Screen */
 
-@media only screen and (max-width:768px){
-    .logo{
+@media only screen and (max-width: 768px) {
+    .logo {
         width: 80%;
-        float: none;
         margin: 1% auto;
+        display: block; /* Use block for better centering */
     }
 
-    .menu ul{
+    .menu ul {
         text-align: center;
+        padding: 0; /* Remove default padding */
     }
 
-    .food-search input[type="search"]{
+    .food-search input[type="search"] {
         width: 90%;
         padding: 2%;
         margin-bottom: 3%;
+        box-sizing: border-box; /* Ensure padding is included in width */
     }
 
-    .btn{
+    .btn {
         width: 91%;
         padding: 2%;
+        margin: 0 auto; /* Center the button */
+        display: block; /* Ensures it takes full width */
     }
 
-    .food-search{
+    .food-search {
         padding: 10% 0;
+        text-align: center; /* Center align the search box */
     }
 
-    .categories{
+    .categories {
         padding: 20% 0;
+        text-align: center; /* Center align the categories */
     }
-    h2{
+
+    h2 {
         margin-bottom: 10%;
+        text-align: center; /* Center align the heading */
     }
-    .box-3{
+
+    .box-3 {
         width: 100%;
         margin: 4% auto;
     }
 
-    .food-menu{
+    .food-menu {
         padding: 20% 0;
+        text-align: center; /* Center align the menu */
     }
 
-    .food-menu-box{
+    .food-menu-box {
         width: 90%;
         padding: 5%;
-        margin-bottom: 5%;
+        margin: 0 auto 5%; /* Center align each menu box */
     }
-    .social{
+
+    .social {
         padding: 5% 0;
+        text-align: center; /* Center align social icons */
     }
-    .order{
+
+    .order {
         width: 100%;
+        margin: 0 auto; /* Center align the order button */
     }
+}
+
 }
